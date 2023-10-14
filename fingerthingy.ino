@@ -29,7 +29,7 @@ void setup() {
 
 
 void loop(){ 
-   // Make servo go to 0 degrees 
+   
    
    int valR = digitalRead(buttonPinR);
    int valM = digitalRead(buttonPinM);
@@ -55,8 +55,7 @@ void loop(){
 if (marr ==   1){
      if(cm <= 15){
       int theta = cm * (180 / 15);        
-    //cm = cm / 15;
-    //cm = cm * 180;
+
       Serial.println(theta);
   
     Servo1.write(theta); }  
